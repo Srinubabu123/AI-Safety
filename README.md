@@ -19,4 +19,4 @@ This is a simple RESTful API to log and manage hypothetical AI safety incidents.
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/humanchain-api.git
+   git clone https://github.com/Srinubabu123/AI-Safety.git
