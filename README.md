@@ -30,7 +30,8 @@ node app.js
 The server will start on port 3001 by default. You can change this by setting the PORT environment variable.
 
 API Endpoints
-GET /incidents
+
+1.GET /incidents
    - Description: Retrieves all incidents.
    - Response: A list of all incidents.
    - Example:
