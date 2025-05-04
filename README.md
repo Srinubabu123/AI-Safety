@@ -30,18 +30,18 @@ node app.js
 The server will start on port 3001 by default. You can change this by setting the PORT environment variable.
 
 API Endpoints
-
-1. GET /incidents
+GET /incidents
    - Description: Retrieves all incidents.
    - Response: A list of all incidents.
    - Example:
      [
        {
-         "id": 1,
-         "title": "Incident Title",
-         "description": "Description of the incident",
+         "_id": "680e1d16924551ee6d8ada4d",
+         "title": "AI Model Crash",
+         "description": "The AI model crashed after unexpected input.",
          "severity": "High",
-         "reported_at": "2025-04-02T18:00:00Z"
+         "reported_at": "2025-04-02T18:00:00Z",
+         "Id": 1
        }
      ]
 
@@ -55,11 +55,12 @@ API Endpoints
      }
    - Response:
      {
-       "id": 3,
+       "_id": "new_generated_id",
        "title": "New Incident",
        "description": "Detailed description",
        "severity": "Medium",
-       "reported_at": "2025-04-02T18:00:00Z"
+       "reported_at": "current_date",
+       "Id": new_incident_id
      }
 
 3. GET /incidents/:id
@@ -67,11 +68,12 @@ API Endpoints
    - Example URL: /incidents/680e1d16924551ee6d8ada4d
    - Response:
      {
-       "id": 1,
-       "title": "Incident Title",
-       "description": "Description of the incident",
+       "_id": "680e1d16924551ee6d8ada4d",
+       "title": "AI Model Crash",
+       "description": "The AI model crashed after unexpected input.",
        "severity": "High",
-       "reported_at": "2025-04-02T18:00:00Z"
+       "reported_at": "2025-04-02T18:00:00Z",
+       "Id": 1
      }
 
 4. DELETE /incidents/:id
